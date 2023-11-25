@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+
+.wrapper{
+    outline: 2px solid #cacbcb;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #3d3c3c;
+    background-color: #c9c4af ;
+    margin-top: 50px;
+}
+#header {
+    text-align: center;
+    margin: 40px;
+    color: #000000;
+
+}
+
+
+#calendar {
+    text-align: center;
+    width: 100%;
+    height:150%;
+    
+}
+table {
+    outline: 2px solid #cacbcb;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+   
+}
+th {
+    width: 200px; 
+    color: #000;
+}
+th, td {
+    outline: 1px solid #ceced0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+td:first-child {
+    color: red;
+}
+td:last-child {
+    color: rgb(93, 160, 228);
+}
+td.disabled {
+    color: #ccc;
+}
+td.today {
+    background-color: #e1be77;
+    color: #fff;
+}
+#next-prev-button {
+    position:relative;
+}
+#next-prev-button button{
+    position: center;
+    display: inline-block;
+  padding: 0.6em 0.5em;
+  margin: 1.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #e1be77;/*色*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  border: solid 2px #cccccd;/*線色*/
+  margin-top: 43px;
+padding-top: 5px;
+}
+#next-prev-button button.active{
+
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+#next {
+    float: right;
+}
+
+#prev {
+    float: left;
+}
+
+
+
+
+
+
+.aisatu{
+    background-color:#e1be77;
+    border: 3px dotted #f9d387;
+    
+    
+}
+#greeting{
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+
+}
+
+
+
+#ul{
+    padding-bottom: 30px;
+}
+
+#realtime{
+    text-decoration:underline;
+}
