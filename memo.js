@@ -1,3 +1,4 @@
+//----------------カレンダー----------------//
 const today = new Date();
 
 let showDate = new Date(today.getFullYear(),today.getMonth(),1);
@@ -128,6 +129,8 @@ function add(todo) {
       li.classList.toggle("text-decoration-line-through");
       saveData();
 
+
+      //------メッセージ-------//
       rand = Math.floor(Math.random()*5);
 	if (rand == 0) msg = "お疲れ様😊";
 	if (rand == 1) msg = "頑張ってるね✌️";
@@ -159,9 +162,8 @@ function saveData() {
 
 
 
-
+//-----------------名言-------------------//
 const hour = new Date().getHours();
-
 //朝4時〜10時59分まで
 if(hour >= 4　&& hour < 11){
 document.getElementById('greeting').textContent ="朝寝は時間の出費である。しかも、これほど高価な出費は他にない （by カーネギー）";
@@ -170,7 +172,7 @@ document.getElementById('greeting').textContent ="朝寝は時間の出費であ
 document.getElementById('greeting').textContent ="今から数年後、あなたはやったことよりも、やらなかったことに失望する。 (by マーク・トウェイン)";
 //夜18時〜3時59分まで
 }else{
-document.getElementById('greeting').textContent ="夜が深まるにつれて、あなたの心配を消していきなさい。今日のために出来ることは成し遂げたと確信して、安らかに眠りなさい。 (by ロアルド・ダール)";
+document.getElementById('greeting').textContent ="同じ時間に寝て、同じ時間に起きることは、良い睡眠を得るために必要不可欠である。(byハワード・バネス)";
 }
 
 
@@ -186,5 +188,6 @@ function showClock() {
   document.getElementById("realtime").innerHTML = msg;
 }
 setInterval('showClock()',1000);
+
 
 
